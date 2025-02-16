@@ -12,18 +12,37 @@
 
 <body>
     <div class="kontejner">
-
         <div class="menu">
-            <a href="https://fjfi.cvut.cz/cz/" class="logo"></a><div class="navtext">Stránky Ing. Pavla Eichlera, PhD</div>
-<div class="navbar">
+            <a href="https://fjfi.cvut.cz/cz/" class="logo"></a>
+            <div class="navtext">Stránky Ing. P. Eichlera, PhD</div>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">Menu</label>
+            <div class="navbar">
                 <ul>
                     <li><a href="#">Domů</a></li>
                     <li><a href="#">O mně</a></li>
-                    <li><a href="#">Výuka</a></li>
-                    <li><a href="#">Vědecká činnost</a></li>
-                </ul></div>
+                    <li><a href="#">Výuka</a>
+                    <ul>
+                        <span class="small_separator"></span>
+                        <li><a href="#">rozvrh</a></li>
+                        <span class="small_separator"></span>
+                        <li><a href="#">něco</a></li>
+                    </ul></li>
+                    <li><a href="#">Výzkum</a>
+                    <ul>
+                        <span class="small_separator"></span>
+                        <li><a href="#">zadání prací</a></li>
+                        <span class="small_separator"></span>
+                        <li><a href="#">něco</a></li>
+                        <span class="small_separator"></span>
+                        <li><a href="#">ještě něco</a></li>
+                    </ul></li>
+                </ul>
+            </div>
         </div>
-        <div class="kontent scrollbar"><h1>nadpis</h1><div class="separator"></div>
+        <div class="kontent scrollbar">
+            <h1>nadpis</h1>
+            <div class="separator"></div>
             <section>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras elementum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicttellus. Donec vitae arcu. Nullam eget nisl. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam dapibus fermentum ipsum. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.</p>
                 <p>Mauris dictum facilisis augue. Duis condimentum augue id magna semper rutrum. Integer pellentesque quam vel velit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Aliquam erat volutpat. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio. Aliquam erat volutpat.</p>
@@ -34,7 +53,7 @@
         </div>
         <div class="footer">copyright nebo něco dalšího</div>
     </div>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="skrypt.js"></script>
 </body>
 
 </html>
