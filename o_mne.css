@@ -1,0 +1,107 @@
+.kontent {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--kontrast1);
+    overflow: auto;
+}
+
+.kontent>section p {
+    text-align: justify;
+}
+
+
+
+.tree{
+    width: 100%;
+    background-color: var(--nav);
+    padding: 3px  0;
+    margin: 0;
+}
+.tree >a::after{
+    content: ">>";
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration-line: none;
+    pointer-events: none;
+}
+
+.kontent h1 {
+    text-align: center;
+}
+
+button{
+    flex: 1;
+    display: flex;
+    padding: 1vh 1.5vw;
+    color: var(--kontrast2);
+    transition-duration: 0.4s;
+    border: 0;
+    background-color: var(--nav);
+}
+button:hover {
+    background-color: var(--kontrast1);
+    color: var(--navbutton);
+    
+}
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: var(--kontrast1);
+    outline: none;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #888; /* Lehce zvýrazněný rámeček */
+    background-color: #fff; /* Světlý efekt při focusu */
+}
+
+textarea {
+    min-height: 80px;
+    resize:both ; /* Umožní uživateli změnit velikost */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--menu) var(--idk);
+}
+
+.separator {
+    width: 90%;
+    margin: auto;
+    margin-bottom: -10px;
+    border-top: 3px double var(--kontrast2);
+    overflow: visible;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.separator::after {
+    content: '♡ ♡ ♡';
+    background-color: var(--bg);
+    padding: 0 5px;
+    position: relative;
+    top: -13px;
+    z-index: 2;
+}
+
+.small_separator {
+    border-top: 1px solid var(--idk);
+    width: 90%;
+}
