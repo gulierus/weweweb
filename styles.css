@@ -1,12 +1,14 @@
-    :root {
+     :root {
         --bg: #FFFCF7;
         --body: white;
-        --nav: #D0D9E8;
+        --nav: #d0d9e8;
+        --subnav:#e7f0ff;
         --idk: #738290;
         --menu: #A1B5D8;
         --kontrast1:white;
         --kontrast2:black;
-    }
+        --table:#FBFFF1;
+    } 
 
     .kontejner {
         margin: auto;
@@ -19,7 +21,7 @@
     }
     
     .kontejner>div {
-        box-shadow: 1px 2px 4px var(--idk);
+        box-shadow: 0px 2px 4px var(--idk);
     }
     
     
@@ -31,6 +33,7 @@
         z-index: 999;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        color:var(--kontrast2)
     }
     .navbar >ul {
         border-top-right-radius: 20px;
@@ -53,17 +56,17 @@
         color: var(--kontrast2);
         transition-duration: 0.4s;
     }
-    
+    .navbar >ul li:last-child>a{
+        border-top-right-radius: 20px;
+    }
     .navbar>ul li a:hover {
-        background-color: var(--kontrast1);
+        background-color: black;
         color: var(--navbutton);
-        
     }
     
     .navbar>ul li ul {
         margin: 0;
         padding: 0;
-        background-color: var(--nav);
         list-style: none;
         position: absolute;
         top: 100%;
@@ -76,8 +79,7 @@
         align-items: center;
         justify-items: center;
         box-shadow: 1px 2px 4px var(--idk);
-        
-        
+        border-bottom-right-radius: 20px;
     }
     
     .navbar> ul li ul li {
@@ -86,12 +88,13 @@
         text-align: center;
         width: 100%;
         box-sizing: border-box;
-        background:var(--bg);
     }
-    
+    .navbar >ul li ul li:last-child>a{
+        border-top-right-radius: 0;
+    }
     .navbar> ul li ul li a {
         justify-content: center;
-        background:var(--bg);
+        background:var(--subnav);
     }
     
     .navbar>ul li:focus-within ul,
@@ -117,11 +120,11 @@
     .navtext {
         padding: 1vh;
         text-align: center;
+        color: var(--kontrast2);
     }
     
     .footer {
         background-color: var(--menu);
-        text-align: center;
         padding: 1vh;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -183,11 +186,7 @@
             position: relative;
             width: 100%;
         }
-        .navbar > ul li ul li {
-            background:var(--bg);
-        }
         .navbar > ul li ul li a {
-            background: var(--bg);
             justify-content: flex-end;
             align-items: center;
             width: 100%;

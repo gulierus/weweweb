@@ -2,19 +2,32 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--kontrast1);
+    background-color: var(--bg);
     overflow: auto;
+
+}
+.page{
+    padding: 20px;
 }
 
-.kontent>section p {
+table{
+    margin: 0 auto;
+    overflow-y: auto;
     text-align: justify;
 }
+tr{
+    padding-bottom: 19px;
+}
 
+td{
+    vertical-align: top;
+    font-size: 19px;
+}
 
 
 .tree{
     width: 100%;
-    background-color: var(--nav);
+    background-color: var(--subnav);
     padding: 3px  0;
     margin: 0;
 }
