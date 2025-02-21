@@ -6,32 +6,49 @@
     overflow: auto;
 
 }
-.page{
-    padding: 20px;
+
+.page {
+    padding:2% 8% ;
 }
 
-table{
+table {
     margin: 0 auto;
     overflow-y: auto;
     text-align: justify;
-}
-tr{
-    padding-bottom: 19px;
+    border-collapse: collapse;
+    width: 100%;
+
 }
 
-td{
+th,
+td {
+    border: 1px solid var(--nav);
+    padding: 5px 10px;
+
+}
+
+tr:nth-child(even) {
+    background-color: var(--subnav);
+}
+
+td {
     vertical-align: top;
     font-size: 19px;
 }
 
+td:first-child {
+    white-space: nowrap;
+}
 
-.tree{
+tr:hover {background-color: #f0f2f9;}
+.tree {
     width: 100%;
     background-color: var(--subnav);
-    padding: 3px  0;
+    padding: 3px 0;
     margin: 0;
 }
-.tree >a::after{
+
+.tree>a::after {
     content: ">>";
     margin-left: 5px;
     margin-right: 5px;
@@ -39,11 +56,7 @@ td{
     pointer-events: none;
 }
 
-.kontent h1 {
-    text-align: center;
-}
-
-button{
+button {
     flex: 1;
     display: flex;
     padding: 1vh 1.5vw;
@@ -52,41 +65,17 @@ button{
     border: 0;
     background-color: var(--nav);
 }
+
 button:hover {
     background-color: var(--kontrast1);
     color: var(--navbutton);
-    
-}
-input, textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    background-color: var(--kontrast1);
-    outline: none;
-    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
 }
 
-input:focus, textarea:focus {
-    border-color: #888; /* Lehce zvýrazněný rámeček */
-    background-color: #fff; /* Světlý efekt při focusu */
+.page > h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
 }
-
-textarea {
-    min-height: 80px;
-    resize:both ; /* Umožní uživateli změnit velikost */
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -96,7 +85,7 @@ textarea {
 }
 
 .separator {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: -10px;
     border-top: 3px double var(--kontrast2);
@@ -117,4 +106,26 @@ textarea {
 .small_separator {
     border-top: 1px solid var(--idk);
     width: 90%;
+}
+li{
+    text-align: justify;
+}
+
+.item{
+    background-color: var(--subnav);
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.item > h3{
+    background-color: var(--idk);
+    padding: 5px 10px;
+    color: var(--subnav);
+    font-size: 1.3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}    
+.item>ul{
+    padding-right: 10px;
+    padding-bottom: 10px;
 }

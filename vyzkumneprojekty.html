@@ -7,8 +7,8 @@
     <meta name="author" content="já">
     <meta name="description" content="osobní stránky Ing. Pavla Eichlera, PhD, KSI, FJFI, ČVUT">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="ostatni.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ostatni.css">
     <link rel="icon" type="image/x-icon" href="" />
 </head>
 
@@ -23,23 +23,33 @@
                 <div class="navbar">
                     <ul>
                         <li><a href="index.html">Domů</a></li>
-                        <li><a href="#">O mně</a></li>
+                        <li><a href="#">O mně</a>
+                            <ul>
+                                <span class="small_separator"></span>
+                                <li><a href="medajlonka.html">Info</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="kratkeCV.html">CV</a></li>
+                            </ul></li>
                         <li><a href="#">Výuka</a>
                             <ul>
                                 <span class="small_separator"></span>
-                                <li><a href="#">rozvrh</a></li>
+                                <li><a href="predmety.html">Vyučované předměty</a></li>
                                 <span class="small_separator"></span>
-                                <li><a href="#">něco</a></li>
+                                <li><a href="#">Rozvrh</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="#">Témata</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Výzkum</a>
                             <ul>
                                 <span class="small_separator"></span>
-                                <li><a href="#">zadání prací</a></li>
+                                <li><a href="#">Zadání prací</a></li>
                                 <span class="small_separator"></span>
-                                <li><a href="vizkum.html">granka</a></li>
+                                <li><a href="publikace.html">Publikace</a></li>
                                 <span class="small_separator"></span>
-                                <li><a href="#">ještě něco</a></li>
+                                <li><a href="konference.html">Konference</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="vyzkumneprojekty.html">Výzkumné projekty</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -48,15 +58,24 @@
             <div class="kontent scrollbar">
                 <div class="tree"><a href="#">domů</a><a href="#">domů</a><a href="#">domů</a></div>
                 <div class="page">
+                     <h1>Výzkumné projekty</h1>
+                    <div class="separator"></div>
                     <table>
                         <tr>
                             <th>Rok</th>
-                            <th>Položka</th>
+                            <th>Projekt</th>
                         </tr>
                         <tr>
                             <td>2025-2030</td>
                             <td>Vývoj, analýza a aplikace Mřížkové Boltzmannove metody. Garantovano GAČR, č. r.
                                 25-17245M.</td>
+
+                        </tr>
+                        <tr>
+                            <td>2024-2026</td>
+                            <td>Off-diagonal thermodynamics and its connection with other factors as a route to
+                                predictable selectivity in C-H bond cleavage, project no. 24-11247S of the Czech Science
+                                Foundation.</td>
                         </tr>
                         <tr>
                             <td>2023-2025</td>
@@ -64,10 +83,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>2024-2026</td>
-                            <td>Off-diagonal thermodynamics and its connection with other factors as a route to
-                                predictable selectivity in C-H bond cleavage, project no. 24-11247S of the Czech Science
-                                Foundation.</td>
+                            <td>2020-2022</td>
+                            <td>Development and application of advanced methods for mathematical modeling of natural and
+                                industrial processes using high-performance computing, project no. SGS20/184/OHK4/3T/14
+                                of the Grant Agency of the Czech Technical University.</td>
                         </tr>
                         <tr>
                             <td>2019-2022</td>
@@ -103,20 +122,14 @@
                             <td>Advanced supercomputing methods for mathematical modeling of natural processes, project
                                 no. SGS14/206/OHK4/3T/14 of the Grant Agency of the Czech Technical University.</td>
                         </tr>
-                        <tr>
-                            <td>2020-2022</td>
-                            <td>Development and application of advanced methods for mathematical modeling of natural and
-                                industrial processes using high-performance computing, project no. SGS20/184/OHK4/3T/14
-                                of the Grant Agency of the Czech Technical University.</td>
-                        </tr>
-                    </table>
+                       
+                    </table> 
                 </div>
             </div>
             <div class="footer navtext">copyright nebo něco dalšího</div>
         </div>
 
     </main>
-    <script type="text/javascript" src="skrypt.js"></script>
 </body>
 
 </html>
