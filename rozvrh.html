@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vítejte na osobních stránkách Ing. Pavla Eichlera, PhD</title>
+    <meta name="author" content="já">
+    <meta name="description" content="osobní stránky Ing. Pavla Eichlera, PhD, KSI, FJFI, ČVUT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ostatni.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <script type="text/javascript" src="timeline_base.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="kontejner">
+            <div class="menu">
+                <a href="https://fjfi.cvut.cz/cz/" class="logo"></a>
+                <div class="navtext">Stránky Ing. P. Eichlera, PhD</div>
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar">Menu</label>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="#">O mně</a>
+                            <ul>
+                                <span class="small_separator"></span>
+                                <li><a href="medajlonka.html">Info</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="kratkeCV.html">CV</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Výuka</a>
+                            <ul>
+                                <span class="small_separator"></span>
+                                <li><a href="predmety.html">Vyučované předměty</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="rozvrh.html">Rozvrh</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="#">Témata prací</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="#">Vedení studenti</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Výzkum</a>
+                            <ul>
+                                <span class="small_separator"></span>
+                                <li><a href="publikace.html">Publikace</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="konference.html">Konference</a></li>
+                                <span class="small_separator"></span>
+                                <li><a href="vyzkumneprojekty.html">Výzkumné projekty</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="kontent scrollbar">
+                <div class="tree"><a href="#">domů</a></div>
+                <div class="page">
+
+
+
+                    <h1>Rozvrh</h1>
+                    <div class="separator"></div>
+                    <div class="notinline">
+                        <div class="button-container">
+                            <button onclick="switchView('day')">Denní</button>
+                            <button onclick="switchView('week')">Celý týden</button>
+                        </div>
+
+                        <!-- Day View Buttons -->
+                        <div class="button-container">
+                            <div id="dayViewButtons">
+                                <button onclick="showDay('monday')">Pondělí</button>
+                                <button onclick="showDay('tuesday')">Uterý</button>
+                                <button onclick="showDay('wednesday')">Středa</button>
+                                <button onclick="showDay('thursday')">Čtvrtek</button>
+                                <button onclick="showDay('friday')">Pátek</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!-- Day View Timetable -->
+                        <div class="timetable" id="timetable-day">
+
+                            <template id="dv-table-header">
+
+                                <tr>
+                                    <th>Čas</th>
+                                    <th>Předmět</th>
+                                    <th>Místnost</th>
+                                </tr>
+
+                            </template>
+
+                            <table id="dv-monday" style="display: none;">
+
+                                <tr>
+                                    <td>08:00 - 10:00</td>
+                                    <td>Repetitorium matematiky 2</td>
+                                    <td>Dc-P4</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00 - 14:00</td>
+                                    <td>Pravděpodobnost a statistika</td>
+                                    <td>Dc-P4</td>
+                                </tr>
+
+                            </table>
+
+                            <table id="dv-tuesday" style="display: none;">
+
+                                <tr>
+                                    <td>08:00 - 10:00</td>
+                                    <td>Pravděpodobnost a statistika</td>
+                                    <td>Dc-P4</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 - 12:00</td>
+                                    <td>Úvod do počítačové fyziky 2</td>
+                                    <td>Dc-PL1</td>
+                                </tr>
+
+                            </table>
+
+                            <table id="dv-wednesday" style="display: none;">
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <table id="dv-thursday" style="display: none;">
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <table id="dv-friday" style="display: none;">
+                                <tbody>
+                                    <tr>
+                                        <td>08:00 - 12:00</td>
+                                        <td>Matematická analýza 2 cvičení</td>
+                                        <td>Dc-P2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <!-- Full Week View Timetable -->
+                        <div id="timetable-week" style="display: none;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Den</th>
+                                        <th>Čas</th>
+                                        <th>Předmět</th>
+                                        <th>Místnost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">Pondělí</td>
+                                        <td>08:00 - 10:00</td>
+                                        <td>Repetitorium matematiky 2</td>
+                                        <td>Dc-P4</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>12:00 - 14:00</td>
+                                        <td>Pravděpodobnost a statistika</td>
+                                        <td>Dc-P4</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">Úterý</td>
+                                        <td>08:00 - 10:00</td>
+                                        <td>Pravděpodobnost a statistika</td>
+                                        <td>Dc-P4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00 - 12:00</td>
+                                        <td>Úvod do počítačové fyziky 2</td>
+                                        <td>Dc-PL1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Středa</td>
+                                        <td>g</td>
+                                        <td>g</td>
+                                        <td>g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Čtvrtek</td>
+                                        <td>g</td>
+                                        <td>g</td>
+                                        <td>g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pátek</td>
+                                        <td>08:00 - 12:00</td>
+                                        <td>Matematická analýza 2 cvičení</td>
+                                        <td>Dc-P2</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer navtext">doufam že tu budou citáty</div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -6,7 +6,9 @@
     overflow: auto;
 
 }
-
+a:active{
+color: var(--navbutton);
+}
 .page {
     padding:2% 8% ;
 }
@@ -39,8 +41,16 @@ td {
 td:first-child {
     white-space: nowrap;
 }
-
-tr:hover {background-color: #f0f2f9;}
+td:hover{
+    background-color: #f3f7ff; 
+}
+.year:hover { 
+    background-color: initial; 
+}
+td a{
+    flex: 1;
+    display: flex;
+}
 .tree {
     width: 100%;
     background-color: var(--subnav);
@@ -57,12 +67,13 @@ tr:hover {background-color: #f0f2f9;}
 }
 
 button {
-    flex: 1;
-    display: flex;
-    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
     color: var(--kontrast2);
     transition-duration: 0.4s;
-    border: 0;
     background-color: var(--nav);
 }
 
@@ -126,6 +137,23 @@ li{
     border-top-right-radius: 10px;
 }    
 .item>ul{
-    padding-right: 10px;
-    padding-bottom: 10px;
+  padding: 0 30px 20px 30px;
+}
+
+/* styly pro rozvrh */
+.notinline{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex; /* Zarovnání tlačítek vedle sebe */
+    justify-content: center; /* Vycentrování na střed */
+    gap: 10px; /* Mezera mezi tlačítky */
+    margin: 10px 0;
+}
+
+#dayViewButtons {
+    display: flex;  /* Zajistí, že tlačítka budou vedle sebe */
+    gap: 10px;  /* Rozestup mezi tlačítky */
 }

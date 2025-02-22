@@ -5,6 +5,7 @@
         --subnav:#e7f0ff;
         --idk: #738290;
         --menu: #A1B5D8;
+        --navbutton: #415658;
         --kontrast1:white;
         --kontrast2:black;
     } 
@@ -134,6 +135,7 @@
         padding: 1vh;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        box-sizing: content-box;
     }
     
     @media screen and (max-width: 925px) {
@@ -141,8 +143,6 @@
             width: 95vw;
             height: 97vh;
             margin: auto;
-            
-
         }
         .menu {
             position: absolute;
