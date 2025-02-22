@@ -14,9 +14,6 @@
         background:   linear-gradient(transparent 80px, var(--nav)  350px) no-repeat left top,url("../img/pozadi2.jpg"),var(--nav);
         background-size: cover;
         background-repeat: no-repeat;
-
-
-
     }
 
     .kontejner {
@@ -155,18 +152,19 @@
             width: 95vw;
             height: 97vh;
             margin: auto;
+            box-sizing: border-box;
         }
         .menu {
-            position: absolute;
+            width: 100%;
+            
             flex-direction: column;
-            width: inherit;
             justify-items: center;
             align-items:flex-end;
         }
         .kontent {
             position: relative;
-            margin-top: 55px;
         }
+
         .menu> label {
             display: initial;
             padding:10px 30px 10px 0;
@@ -177,7 +175,7 @@
         }
         .navbar ul {
             flex-direction: column;
-            width: inherit;
+            width: 100%;
             border-top-right-radius: 0;
         }
         .navbar > ul li {

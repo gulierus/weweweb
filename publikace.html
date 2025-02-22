@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="cs">
 
 <head>
     <meta charset="utf-8">
@@ -10,53 +10,17 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/ostatni.css">
     <link rel="icon" type="image/x-icon" href="" />
+    <script type="text/javascript" src="/js/footer-elem.js" defer></script>
+    <script type="text/javascript" src="/js/navbar.js" defer></script>
+    <script type="text/javascript" src="/js/skript.js" defer></script>
 </head>
 
 <body>
     <main>
         <div class="kontejner">
-            <div class="menu">
-                <a href="https://fjfi.cvut.cz/cz/" class="logo"></a>
-                <div class="navtext">Stránky Ing. P. Eichlera, PhD</div>
-                <input type="checkbox" id="menu-bar">
-                <label for="menu-bar">Menu</label>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="index.html">Domů</a></li>
-                        <li><a href="#">O mně</a>
-                            <ul>
-                                <span class="small_separator"></span>
-                                <li><a href="medajlonka.html">Info</a></li>
-                                <span class="small_separator"></span>
-                                <li><a href="kratkeCV.html">CV</a></li>
-                            </ul></li>
-                        <li><a href="#">Výuka</a>
-                            <ul>
-                                <span class="small_separator"></span>
-                                <li><a href="predmety.html">Vyučované předměty</a></li>
-                                <span class="small_separator"></span>
-                                <li><a href="rozvrh.html">Rozvrh</a></li>
-                                <span class="small_separator"></span>
-                                <li><a href="temata.html">Témata prací</a></li>
-                                <span class="small_separator"></span>
-                                <li><a href="vedeni_studenti.html">Vedení studenti</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Výzkum</a>
-                            <ul>
-                                <span class="small_separator"></span>
-                                <li><a href="publikace.html">Publikace</a></li>
-                                <span class="small_separator"></span>
-                                <li><a href="konference.html">Konference</a></li>
-                                <span class="small_separator"></span>
-                                <li><a href="vyzkumneprojekty.html">Výzkumné projekty</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <navigation-bar id="navigation-bar"></navigation-bar>
             <div class="kontent scrollbar">
-                <div class="tree"><a href="#">domů</a></div>
+                <!--<div class="tree"><a href="#">domů</a><a href="#">domů</a><a href="#">domů</a></div>-->
                 <div class="page">
 
 
@@ -68,7 +32,8 @@
                         <li>Fučík, R., <strong>Eichler, P.</strong>, Straka, R., Pauš, P., Klinkovský, J., Oberhuber, T.
                             (2019). On optimal node spacing for immersed boundary–lattice Boltzmann method in 2D and 3D.
                             <i>Computers and Mathematics with Applications</i>, 77(4), 1144-1162. ISSN 0898-1221. DOI:
-                            <a href="https://doi.org/10.1016/j.camwa.2018.10.045">10.1016/j.camwa.2018.10.045</a></li>
+                            <a href="https://doi.org/10.1016/j.camwa.2018.10.045">10.1016/j.camwa.2018.10.045</a>
+                        </li>
                         <li><strong>Eichler, P.</strong>, P., Fučík, R., Straka, R. (2021). Computational study of
                             immersed boundary – lattice Boltzmann method for fluid-structure interaction. <i>Discrete
                                 and Continuous Dynamical Systems-S</i>, 14(3), 819-833. ISSN 1937-1632. DOI: <a
@@ -107,7 +72,8 @@
                             Tintěra, J., Chabiniok, R. (2023). Non-Newtonian turbulent flow through aortic phantom:
                             Experimental and computational study using magnetic resonance imaging and lattice Boltzmann
                             method. <i>Computers and Mathematics with Applications</i>, 136, 80-94. ISSN 0898-1221. DOI:
-                            <a href="https://doi.org/10.1016/j.camwa.2023.01.031">10.1016/j.camwa.2023.01.031</a></li>
+                            <a href="https://doi.org/10.1016/j.camwa.2023.01.031">10.1016/j.camwa.2023.01.031</a>
+                        </li>
                         <li><strong>Eichler, P.</strong>, Fučík, R., Strachota, P. (2024). Investigation of mesoscopic
                             boundary conditions for lattice Boltzmann method in laminar flow problems. <i>Computers and
                                 Mathematics with Applications</i>, 173, 87-101. ISSN 0898-1221. DOI: <a
@@ -118,28 +84,58 @@
                             2080-4075. DOI: <a
                                 href="https://doi.org/10.12913/22998624/194888">10.12913/22998624/194888</a></li>
                     </ul>
-<div class="separator"></div>
+                    <div class="separator"></div>
                     <h2>Ostatní příspěvky do publikací</h2>
                     <ul>
-                      <li><strong>Eichler, P.</strong>, Fučík, R. Numerical Analysis of Immersed Boundary Lattice Boltzmann Method for Fluid-Structure Interaction. <em>Doktorandské dny 2018</em>, eds: Ambrož P., Masáková Z., pp. 23-24.</li>
-                      <li><strong>Eichler, P.</strong>, Fučík, R. Boundary layer flow simulations using lattice Boltzmann method. <em>Doktorandské dny 2019</em>, eds: Ambrož P., Masáková Z., pp. 19-28.</li>
-                      <li><strong>Eichler, P.</strong> Cumulant lattice Boltzmann simulations of turbulent flow above rough surfaces. <em>Doktorandské dny 2020</em>, eds: Ambrož P., Masáková Z., pp. 11-22.</li>
-                      <li><strong>Eichler, P.</strong>, Malík, M., Oberhuber, T., Fučík, R. Numerical investigation of the discrete solution of phase-field equation. <em>ALGORITMY 2020, 21st Conference on Scientific Computing</em>. Vysoké Tatry, Podbanské, Slovakia, September 10-15, 2020. <em>Proceedings of contributed papers.</em> Bratislava: VYDAVATELSTVO SPEKTRUM STU, 2020. p. 111-120. ISBN 978-80-227-5032-5.</li>
-                      <li>Škardová, K., <strong>Eichler, P.</strong>, Oberhuber, T., Fučík, R. Investigation of Blood-Like Non-Newtonian Fluid Flow in Stenotic Arteries using the Lattice Boltzmann Method in 2D. <em>ALGORITMY 2020, 21st Conference on Scientific Computing.</em> Vysoké Tatry, Podbanské, Slovakia, September 10-15, 2020. <em>Proceedings of contributed papers.</em> Bratislava: VYDAVATELSTVO SPEKTRUM STU, 2020. p. 91-100. ISBN 978-80-227-5032-5.</li>
-                      <li>Beneš, M., <strong>Eichler, P.</strong>, Klinkovský, J., Kolář, M., Smejkal, T., Solovský, J., Strachota, P., Žák, A., Hrdlička, J., Skopec, P.</strong> CFD Simulation and Experimental Analysis of Fluidization in a Model of an Oxyfuel Fluidized Bed Boiler. <em>ALGORITMY 2020, 21st Conference on Scientific Computing.</em> Vysoké Tatry, Podbanské, Slovakia, September 10-15, 2020. <em>Proceedings of contributed papers.</em> Bratislava: VYDAVATELSTVO SPEKTRUM STU, 2020. p. 101-110. ISBN 978-80-227-5032-5.</li>
-                      <li><strong>Eichler, P.</strong> Fluid Flow Simulations through Distributor Plate Using Cumulant Lattice Boltzmann Method. <em>Doktorandské dny 2021</em>, eds: Ambrož P., Masáková Z., pp. 23-24.</li>
-                      <li>Beneš, M., <strong>Eichler, P.</strong>, Klinkovský, J., Kolář, M., Solovský, J., Strachota, P., Žák, A. Modeling and Simulation of Bed Dynamics in Oxyfuel Fluidized Bed Boilers. <em>Numerical Mathematics and Advanced Applications ENUMATH 2019.</em> Cham: Springer International Publishing AG, 2021. p. 919-927. <em>Lecture Notes in Computational Science and Engineering.</em> vol. 139. ISSN 1439-7358. ISBN 978-3-030-55873-4.</li>
-                      <li><strong>Eichler, P.</strong> Non-Newtonian Turbulent Fluid Flow Simulations through Aortic Phantom Using Cumulant Lattice Boltzmann Method. <em>Doktorandské dny 2022</em>, eds: Ambrož P., Masáková Z., pp. 19-20.</li>
-                      <li>Chabiniok, R., Škardová, K., Galabov, R., <strong>Eichler, P.</strong>, Gusseva, M., Janoušek, J., Fučík, R., Tintěra, J., Oberhuber, T., Hussain, T. Translational Cardiovascular Modeling: Tetralogy of Fallot and Modeling of Diseases. In: <em>Modeling Biomaterials.</em> Birkhäuser, Cham, 2021. p. 241-276. DOI: <a href="https://doi.org/10.1007/978-3-030-88084-2_6">https://doi.org/10.1007/978-3-030-88084-2_6</a></li>
+                        <li><strong>Eichler, P.</strong>, Fučík, R. Numerical Analysis of Immersed Boundary Lattice
+                            Boltzmann Method for Fluid-Structure Interaction. <em>Doktorandské dny 2018</em>, eds:
+                            Ambrož P., Masáková Z., pp. 23-24.</li>
+                        <li><strong>Eichler, P.</strong>, Fučík, R. Boundary layer flow simulations using lattice
+                            Boltzmann method. <em>Doktorandské dny 2019</em>, eds: Ambrož P., Masáková Z., pp. 19-28.
+                        </li>
+                        <li><strong>Eichler, P.</strong> Cumulant lattice Boltzmann simulations of turbulent flow above
+                            rough surfaces. <em>Doktorandské dny 2020</em>, eds: Ambrož P., Masáková Z., pp. 11-22.</li>
+                        <li><strong>Eichler, P.</strong>, Malík, M., Oberhuber, T., Fučík, R. Numerical investigation of
+                            the discrete solution of phase-field equation. <em>ALGORITMY 2020, 21st Conference on
+                                Scientific Computing</em>. Vysoké Tatry, Podbanské, Slovakia, September 10-15, 2020.
+                            <em>Proceedings of contributed papers.</em> Bratislava: VYDAVATELSTVO SPEKTRUM STU, 2020. p.
+                            111-120. ISBN 978-80-227-5032-5.</li>
+                        <li>Škardová, K., <strong>Eichler, P.</strong>, Oberhuber, T., Fučík, R. Investigation of
+                            Blood-Like Non-Newtonian Fluid Flow in Stenotic Arteries using the Lattice Boltzmann Method
+                            in 2D. <em>ALGORITMY 2020, 21st Conference on Scientific Computing.</em> Vysoké Tatry,
+                            Podbanské, Slovakia, September 10-15, 2020. <em>Proceedings of contributed papers.</em>
+                            Bratislava: VYDAVATELSTVO SPEKTRUM STU, 2020. p. 91-100. ISBN 978-80-227-5032-5.</li>
+                        <li>Beneš, M., <strong>Eichler, P.</strong>, Klinkovský, J., Kolář, M., Smejkal, T., Solovský,
+                            J., Strachota, P., Žák, A., Hrdlička, J., Skopec, P.</strong> CFD Simulation and
+                            Experimental Analysis of Fluidization in a Model of an Oxyfuel Fluidized Bed Boiler.
+                            <em>ALGORITMY 2020, 21st Conference on Scientific Computing.</em> Vysoké Tatry, Podbanské,
+                            Slovakia, September 10-15, 2020. <em>Proceedings of contributed papers.</em> Bratislava:
+                            VYDAVATELSTVO SPEKTRUM STU, 2020. p. 101-110. ISBN 978-80-227-5032-5.</li>
+                        <li><strong>Eichler, P.</strong> Fluid Flow Simulations through Distributor Plate Using Cumulant
+                            Lattice Boltzmann Method. <em>Doktorandské dny 2021</em>, eds: Ambrož P., Masáková Z., pp.
+                            23-24.</li>
+                        <li>Beneš, M., <strong>Eichler, P.</strong>, Klinkovský, J., Kolář, M., Solovský, J., Strachota,
+                            P., Žák, A. Modeling and Simulation of Bed Dynamics in Oxyfuel Fluidized Bed Boilers.
+                            <em>Numerical Mathematics and Advanced Applications ENUMATH 2019.</em> Cham: Springer
+                            International Publishing AG, 2021. p. 919-927. <em>Lecture Notes in Computational Science
+                                and Engineering.</em> vol. 139. ISSN 1439-7358. ISBN 978-3-030-55873-4.</li>
+                        <li><strong>Eichler, P.</strong> Non-Newtonian Turbulent Fluid Flow Simulations through Aortic
+                            Phantom Using Cumulant Lattice Boltzmann Method. <em>Doktorandské dny 2022</em>, eds: Ambrož
+                            P., Masáková Z., pp. 19-20.</li>
+                        <li>Chabiniok, R., Škardová, K., Galabov, R., <strong>Eichler, P.</strong>, Gusseva, M.,
+                            Janoušek, J., Fučík, R., Tintěra, J., Oberhuber, T., Hussain, T. Translational
+                            Cardiovascular Modeling: Tetralogy of Fallot and Modeling of Diseases. In: <em>Modeling
+                                Biomaterials.</em> Birkhäuser, Cham, 2021. p. 241-276. DOI: <a
+                                href="https://doi.org/10.1007/978-3-030-88084-2_6">https://doi.org/10.1007/978-3-030-88084-2_6</a>
+                        </li>
                     </ul>
 
                 </div>
             </div>
-            <div class="footer navtext">doufam že tu budou citáty | <span class="citat" id="citaty"></span></div>
+            <footer-elem id="footer-elem"></footer-elem>
         </div>
 
     </main>
-    <script type="text/javascript" src="skript.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="cs">
 
 <head>
     <meta charset="utf-8">
@@ -10,54 +10,17 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/ostatni.css">
     <link rel="icon" type="image/x-icon" href="" />
+    <script type="text/javascript" src="/js/footer-elem.js" defer></script>
+    <script type="text/javascript" src="/js/navbar.js" defer></script>
+    <script type="text/javascript" src="/js/skript.js" defer></script>
 </head>
 
 <body>
     <main>
         <div class="kontejner">
-            <div class="menu">
-                <a href="https://fjfi.cvut.cz/cz/" class="logo"></a>
-                <div class="navtext">Stránky Ing. P. Eichlera, PhD</div>
-                <input type="checkbox" id="menu-bar">
-                <label for="menu-bar">Menu</label>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="index.html">Domů</a></li>
-                        <li><a href="#">O mně</a>
-                            <ul>
-                                <div class="small_separator"></div>
-                                <li><a href="medajlonka.html">Info</a></li>
-                                <div class="small_separator"></div>
-                                <li><a href="kratkeCV.html">CV</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Výuka</a>
-                            <ul>
-                                <div class="small_separator"></div>
-                                <li><a href="predmety.html">Vyučované předměty</a></li>
-                                <div class="small_separator"></div>
-                                <li><a href="rozvrh.html">Rozvrh</a></li>
-                                <div class="small_separator"></div>
-                                <li><a href="temata.html">Témata prací</a></li>
-                                <div class="small_separator"></div>
-                                <li><a href="vedeni_studenti.html">Vedení studenti</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Výzkum</a>
-                            <ul>
-                                <div class="small_separator"></div>
-                                <li><a href="publikace.html">Publikace</a></li>
-                                <div class="small_separator"></div>
-                                <li><a href="konference.html">Konference</a></li>
-                                <div class="small_separator"></div>
-                                <li><a href="vyzkumneprojekty.html">Výzkumné projekty</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <navigation-bar id="navigation-bar"></navigation-bar>
             <div class="kontent scrollbar">
-                <div class="tree"><a href="#">domů</a></div>
+                <!--<div class="tree"><a href="#">domů</a><a href="#">domů</a><a href="#">domů</a></div>-->
                 <div class="page">
 
                     <h1>Pavel Eichler</h1>
@@ -116,11 +79,10 @@
                     </div>
                 </div>
             </div>
-            <div class="footer navtext">doufam že tu budou citáty | <div class="citat" id="citaty"></div></div>
+            <footer-elem id="footer-elem"></footer-elem>
         </div>
 
     </main>
-    <script type="text/javascript" src="skript.js"></script>
 </body>
 
 </html>
