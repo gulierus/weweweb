@@ -9,6 +9,15 @@
         --kontrast1:white;
         --kontrast2:black;
     } 
+    body{
+
+        background:   linear-gradient(transparent 80px, var(--nav)  350px) no-repeat left top,url("../img/pozadi2.jpg"),var(--nav);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+
+    }
 
     .kontejner {
         margin: auto;
@@ -18,6 +27,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        
     }
     
     .kontejner>div {
@@ -110,10 +120,12 @@
         width: 4vw;
         padding: 1vh;
         transition-duration: 0.4s;
+        border-top-left-radius: 20px;
     }
     
     .logo:hover {
         background-color: var(--kontrast1);
+        
     }
     
     .navtext {
@@ -198,4 +210,6 @@
         .menu .navtext {
            display: none;
         }
+       
+        
     }
